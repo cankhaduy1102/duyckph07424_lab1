@@ -5,6 +5,7 @@ $url = isset($_GET['url']) ? $_GET['url'] : "/";
 
 require_once './app/controllers/HomeController.php';
 require_once './app/controllers/ProductController.php';
+require_once './app/controllers/CategoryController.php';
 
 switch ($url) {
     case '/':
@@ -12,9 +13,9 @@ switch ($url) {
         echo $ctr->index();
         break;
     
-    case 'detail':
-        $ctr = new HomeController();
-        echo $ctr->detail();
+    case 'categories':
+        $ctr = new CategoryController();
+        echo $ctr->categories();
         break;
     
     case 'contact':
