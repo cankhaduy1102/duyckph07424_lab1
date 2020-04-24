@@ -5,5 +5,8 @@
 			$categories=Category::all();
         include_once './app/views/Categories.php';
 		}
+		public function add_category(){
+			include_once './app/views/add-Category.php';
+		}
 	}
 ?>
