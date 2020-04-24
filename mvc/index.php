@@ -18,14 +18,14 @@ switch ($url) {
         echo $ctr->categories();
         break;
     
-    case 'contact':
-        $ctr = new HomeController();
-        echo $ctr->contact();
-        break;
-
     case 'add-product':
         $ctr = new ProductController();
-        echo $ctr->addForm();
+        echo $ctr->add_product();
+        break;
+
+    case 'categories/add':
+        $ctr = new CategoryController();
+        echo $ctr->add_category();
         break;
     default:
         echo "Đường dẫn không tồn tại";
