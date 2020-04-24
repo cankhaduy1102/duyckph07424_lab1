@@ -1,8 +1,8 @@
 <?php
 class ProductController{
 
-    public function addForm(){
-        return "Giao diện tạo mới sản phẩm";
+    public function add_product(){
+        include_once './app/views/add-product.php';
     }
 
 
